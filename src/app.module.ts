@@ -12,11 +12,11 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     TypeOrmModule.forRoot({
       type: "postgres",
-      host: "localhost",
+      host: "postgres.ciyjxtgmo6za.ap-southeast-1.rds.amazonaws.com",
       port: 5432,
       username: "postgres",
-      password: "root",
-      database: "crud-nest",
+      password: "postgres",
+      database: "postgres",
       entities: [User]
     }),
     UserModule,
